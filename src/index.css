@@ -3,17 +3,43 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
-.app header {
-  height: 40px;
-  padding: 15px 0;
-  width: 100%;
-  background: -webkit-linear-gradient(top, #fbfbfb, #ccc);
-  background: linear-gradient(to bottom, #fbfbfb, #ccc);
-  font-family: Impact, sans-serif;
+.app {
   text-align: center; }
-  .app header h1 {
-    margin: 0; }
-.app .app-intro {
-  font-size: large; }
+  .app header {
+    height: 40px;
+    padding: 15px 0;
+    width: 100%;
+    background: -webkit-linear-gradient(top, #fbfbfb, #ccc);
+    background: linear-gradient(to bottom, #fbfbfb, #ccc);
+    font-family: Impact, sans-serif; }
+    .app header h1 {
+      margin: 0; }
+  .app main {
+    margin: 1.5em 0; }
+  .app #search input {
+    display: inline-block;
+    height: 2.0em;
+    width: 50%; }
+  .app #search button {
+    display: inline-block;
+    padding: .55em;
+    width: 100px; }
+  .app #player-panel {
+    margin: 2em 0; }
+    .app #player-panel #video-wrapper {
+      height: 360px; }
+      .app #player-panel #video-wrapper iframe {
+        height: 360px;
+        width: 640px; }
+    .app #player-panel #video-info-panel {
+      text-align: center; }
+      .app #player-panel #video-info-panel .content {
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-top: none;
+        text-align: left;
+        width: 640px; }
+        .app #player-panel #video-info-panel .content h2, .app #player-panel #video-info-panel .content p {
+          padding: 0 .5em 0; }
 
 /*# sourceMappingURL=index.css.map */

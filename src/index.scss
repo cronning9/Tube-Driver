@@ -1,5 +1,7 @@
 $very-light-grey: #fbfbfb;
 $plain-grey: #ccc;
+$video-panel-width: 640px;
+$video-panel-height: 360px;
 
 body {
   margin: 0;
@@ -8,6 +10,7 @@ body {
 }
 
 .app {
+  text-align: center;
 
   header {
     height: 40px;
@@ -16,14 +19,57 @@ body {
     background: -webkit-linear-gradient(top, $very-light-grey, $plain-grey);
     background: linear-gradient(to bottom, $very-light-grey, $plain-grey);
     font-family: Impact, sans-serif;
-    text-align: center;
 
     h1 {
       margin: 0;
     }
   }
 
-  .app-intro {
-    font-size: large;
+  main {
+    margin: 1.5em 0;
   }
+
+  #search {
+
+    input {
+      display: inline-block;
+      height: 2.0em;
+      width: 50%;
+    }
+
+    button {
+      display: inline-block;
+      padding: .55em;
+      width: 100px;
+    }
+  }
+
+  #player-panel {
+    margin: 2em 0;
+
+    #video-wrapper {
+      height: $video-panel-height;
+      iframe {
+        height: $video-panel-height;
+        width: $video-panel-width;
+      }
+    }
+
+    #video-info-panel {
+      text-align: center;
+
+      .content {
+        display: inline-block;
+        border: 2px solid $plain-grey;
+        border-top: none;
+        text-align: left;
+        width: $video-panel-width;
+
+        h2, p {
+          padding: 0 .5em 0 0;
+        }
+      }
+    }
+  }
+
 }
