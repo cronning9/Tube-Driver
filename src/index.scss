@@ -1,3 +1,6 @@
+$very-light-grey: #fbfbfb;
+$plain-grey: #ccc;
+
 body {
   margin: 0;
   padding: 0;
@@ -5,17 +8,19 @@ body {
 }
 
 .app {
-  text-align: center;
 
-  .app-logo {
-    height: 80px;
-  }
+  header {
+    height: 40px;
+    padding: 15px 0;
+    width: 100%;
+    background: -webkit-linear-gradient(top, $very-light-grey, $plain-grey);
+    background: linear-gradient(to bottom, $very-light-grey, $plain-grey);
+    font-family: Impact, sans-serif;
+    text-align: center;
 
-  .app-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
+    h1 {
+      margin: 0;
+    }
   }
 
   .app-intro {
